@@ -11,7 +11,7 @@ const userRoutes = require("./routes/user");
 
 // DB Connection
 mongoose
-    .connect(process.env.DATABASE,{ // env storing the address where it is running
+    .connect("mongodb+srv://vishal:vishal@cluster0-wfuul.mongodb.net/test?retryWrites=true&w=majority",{ // env storing the address where it is running
     useNewUrlParser: true, 
     useUnifiedTopology: true,
     useCreateIndex: true
